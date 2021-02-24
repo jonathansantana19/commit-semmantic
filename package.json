@@ -56,6 +56,11 @@
     "@commitlint/config-conventional": "^11.0.0",
     "husky": "^5.0.9"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "jest": {
     "moduleFileExtensions": [
       "js",
