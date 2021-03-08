@@ -123,5 +123,44 @@ $ git commit -m 'feat: add commitlint' # success
 
 ```
 
-# Change Log
+# Change Log Automatic
 
+Fonte:  https://www.mokkapps.de/blog/how-to-automatically-generate-a-helpful-changelog-from-your-git-commit-messages/
+Lib: https://www.npmjs.com/package/standard-version 
+Conf: https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.1.0/README.md
+
+
+```
+$ npm i --save-dev standard-version
+
+```
+ npm scripts in our package.json:
+ ```
+   "scripts": {
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  ```
+
+  .versionrc.json<br>
+
+  ```
+{
+    "types": [
+      {"type": "feat", "section": "Features"},
+      {"type": "fix", "section": "Bug Fixes"},
+      {"type": "chore", "hidden": true},
+      {"type": "docs", "hidden": true},
+      {"type": "style", "hidden": true},
+      {"type": "refactor", "hidden": true},
+      {"type": "perf", "hidden": true},
+      {"type": "test", "hidden": true}
+    ],
+    "commitUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/commits/{{hash}}",
+    "compareUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/compare/{{previousTag}}...{{currentTag}}"
+  }
+  ```
+
+  The first release can be created by running npm run release -- --first-release in the terminal:
