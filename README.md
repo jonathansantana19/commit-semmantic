@@ -1,75 +1,105 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>aad   sadasadds
+# test-commit-semmantic
+Projeto Testando boas práticas de commits semmantic
 
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# Projeto teste com nestJs typescript
 
-## Installation
+Lib: https://www.conventionalcommits.org/en/v1.0.0/
+Fonte: https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
+Rules : https://commitlint.js.org/#/reference-rules?id=scope-case
+https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-rules.md#scope-case
 
-```bash
-$ npm install
-```
 
-## Running the app
+# Instalação passo a passo https://remarkablemark.org/blog/2019/05/29/git-husky-commitlint/
 
-```bash
-# development
-$ npm run start
+Install commitlint with a config:
 
-# watch mode
-$ npm run start:dev
+$ npm install @commitlint/{cli,config-conventional}
+This command installs both @commitlint/cli and @commitlint/config-conventional.
 
-# production mode
-$ npm run start:prod
-```
+config-conventional is a standard based on the Angular convention.
 
-## Test
+Create .commitlintrc.json, which extends the rules from config-conventional:
 
-```bash
-# unit tests
-$ npm run test
+{
+  "extends": ["@commitlint/config-conventional"]
+}
+Or export the rules in commitlint.config.js:
 
-# e2e tests
-$ npm run test:e2e
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+};
+Install husky:
 
-# test coverage
-$ npm run test:cov
-```
+$ npm install husky
+Enable Git hooks:
 
-## Support
+$ npx husky install
+Or add postinstall script to package.json to enable Git hooks after npm install:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^5.0.9"
+  }
+}
+It’s assumed that the package is private. If the package is public, then make sure to disable postinstall script using pinst. See Husky docs for more information.
 
-## Stay in touch
+Add the commit-msg hook:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+$ npx husky add .husky/commit-msg 'npx commitlint --edit $1'
+Make sure to use single quotes intead of double quotes so $1 is added correctly.
 
-## License
+Test that the commit hook works.
 
-  Nest is [MIT licensed](LICENSE).
+Husky 4
+Install commitlint with a config:
+
+$ npm install @commitlint/{cli,config-conventional}
+Create .commitlintrc.json, which extends the rules from config-conventional:
+
+{
+  "extends": ["@commitlint/config-conventional"]
+}
+Or export the rules in commitlint.config.js:
+
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+};
+Install husky@4, which sets up the Git hooks:
+
+$ npm install husky@4
+Create .huskyrc (or .huskyrc.json) and add the Git commit-msg hook that runs commitlint:
+
+{
+  "hooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+  }
+}
+Or add the hook to package.json:
+
+{
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "husky": "4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
+Test that the commit hook works.
+
+Test
+Commit and verify the message follows Conventional Commits:
+
+$ git commit -m 'add commitlint'       # fail
+$ git commit -m 'feat: add commitlint' # success
