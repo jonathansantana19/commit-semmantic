@@ -13,6 +13,14 @@ https://github.com/conventional-changelog/commitlint/blob/master/docs/reference-
 
 # Instalação passo a passo https://remarkablemark.org/blog/2019/05/29/git-husky-commitlint/
 
+# Types
+
+feat : Para um novo arquivo. (A ferramenta não consegue diferenciar o conteúdo de um recurso / refatoração / correção de bug, mas assume que um novo arquivo provavelmente será um novo recurso)
+chore:  Para arquivos de configuração e para excluir, renomear ou mover um arquivo.
+ci: 	Para configurações em torno de Ações GH, CircleCI e BuildKite.
+test: Para diretórios e arquivos relacionados a testes, como tests/ou index.spec.js.
+docs : Para alterações na documentação, goste README.md, docs/ou CONTRIBUTING.md.
+
 Install commitlint with a config:
 
 $ npm install @commitlint/{cli,config-conventional}
