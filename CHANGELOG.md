@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v1.0.0...v2.0.0) (2021-03-09)
+
+
+### Features
+
+* Apresentação ao time ([9959c62](https://github.com/jonathansantana19/commit-semmantic/commits/9959c6253867c2e6ee32f639e7c233139a41564a))
+* Apresentação ao time ([c880eda](https://github.com/jonathansantana19/commit-semmantic/commits/c880eda36c7a800d252e4391d73eb56a44eb278b))
+* Apresentação ao time ([2bbee08](https://github.com/jonathansantana19/commit-semmantic/commits/2bbee086128bd7288e1a247ff0bd564038283174))
+
 ## [1.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v0.1.1...v1.0.0) (2021-03-08)
 
 ### [0.1.1](https://github.com/jonathansantana19/commit-semmantic/compare/v0.1.0...v0.1.1) (2021-03-08)
