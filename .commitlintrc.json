@@ -14,7 +14,8 @@
             2,
             "always",
             [
-                "teste"
+                "teste",
+                "apresentacao"
             ]
         ],
         "subject-case": [
