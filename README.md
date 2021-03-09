@@ -1,5 +1,5 @@
 # test-commit-semmantic
-Projeto Testando boas práticas de commits semmantic
+Projeto Testando boas práticas de commits semmantic e gerando change log automático
 
 
 
