@@ -10,13 +10,6 @@
                 "lowerCase"
             ]
         ],
-        "scope-enum": [
-            2,
-            "always",
-            [
-                "teste"
-            ]
-        ],
         "subject-case": [
             2,
             "always",
