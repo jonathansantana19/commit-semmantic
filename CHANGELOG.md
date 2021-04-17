@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v7.0.0...v8.0.0) (2021-04-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **teste:** bla bla bla breaking Related to #BS-123
+* **teste:** bla bla bla breaking
+* **teste:** bla bla bla breaking
+
+### Features
+
+* **teste:** teste ([18793c1](https://github.com/jonathansantana19/commit-semmantic/commits/18793c16839a580a4e855a124845ab3ae580412f))
+* **teste:** teste ([ecd1509](https://github.com/jonathansantana19/commit-semmantic/commits/ecd1509677e33e8d710743313c2229d51daf3e77))
+* **teste:** teste ([bc00031](https://github.com/jonathansantana19/commit-semmantic/commits/bc00031d372637317310230326731a62058b1c22))
+
 ## [7.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v6.0.0...v7.0.0) (2021-04-17)
 
 
