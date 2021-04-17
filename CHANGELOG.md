@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v5.0.0...v6.0.0) (2021-04-17)
+
+
+### Features
+
+* **teste:** teste ([f29530a](https://github.com/jonathansantana19/commit-semmantic/commits/f29530a3034f4f8320176dce4815c30f22026a45)), closes [#BS-1](https://github.com/jonathansantana19/commit-semmantic/issues/BS-1)
+
 ## [5.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v4.0.0...v5.0.0) (2021-04-17)
 
 
