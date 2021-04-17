@@ -10,23 +10,6 @@
                 "lowerCase"
             ]
         ],
-        "scope-enum": [
-            2,
-            "always",
-            [
-                "teste"
-            ]
-        ],
-        "subject-case": [
-            2,
-            "always",
-            [
-                "sentence-case",
-                "start-case",
-                "pascal-case",
-                "upper-case"
-            ]
-        ],
         "header-max-length": [
             0,
             "always",
@@ -44,6 +27,10 @@
                 "test",
                 "revert"
             ]
+        ],
+        "footer-empty": [
+            0,
+            "never"
         ]
     }
 }
