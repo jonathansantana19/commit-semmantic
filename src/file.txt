@@ -1,1 +1,10 @@
-testeadadasdsadas
+testeadadasdsadasa
+
+
+
+Editor pub/sub
+Conta de serviço do Cloud Build
+Chamador do Cloud Run
+Usuário do Error Reporting
+Chamador do Cloud Functions
+Criador do token da conta de serviço
