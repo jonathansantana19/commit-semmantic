@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v8.0.0...v9.0.0) (2021-04-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **teste:** bla bla bla breaking
+
+### Features
+
+* **teste:** teste ([5671014](https://github.com/jonathansantana19/commit-semmantic/commits/56710148abd67353349a9f390f742ee283dd92fd)), closes [#BS-123](https://github.com/jonathansantana19/commit-semmantic/issues/BS-123)
+
 ## [8.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v7.0.0...v8.0.0) (2021-04-17)
 
 
