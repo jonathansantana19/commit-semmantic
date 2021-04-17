@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v3.0.0...v4.0.0) (2021-04-17)
+
 ## [3.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v2.0.0...v3.0.0) (2021-04-17)
 
 
