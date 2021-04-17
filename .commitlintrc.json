@@ -42,28 +42,38 @@
                 "lowerCase"
             ]
         ],
+        "header-min-length": [
+            2,
+            "always",
+            10
+        ],
         "header-max-length": [
             2,
             "always",
-            3
+            100
         ],
         "body-leading-blank": [
-            2,
+            0,
             "always",
             "warning"
+        ],
+        "body-min-length": [
+            2,
+            "always",
+            20
         ],
         "footer-empty": [
             2,
             "never"
         ],
         "footer-leading-blank": [
-            2,
+            0,
             "never"
         ],
         "footer-min-length": [
             2,
             "always",
-            10
+            15
         ]
     }
 }
