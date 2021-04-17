@@ -3,18 +3,6 @@
         "@commitlint/config-conventional"
     ],
     "rules": {
-        "scope-empty": [
-            0,
-            "always",
-            [
-                "lowerCase"
-            ]
-        ],
-        "header-max-length": [
-            0,
-            "always",
-            72
-        ],
         "type-enum": [
             0,
             "always",
@@ -25,12 +13,54 @@
                 "style",
                 "refactor",
                 "test",
-                "revert"
+                "revert",
+                "chore",
+                "perf"
             ]
         ],
-        "footer-empty": [
+        "scope-empty": [
+            2,
+            "never",
+            [
+                "lowerCase"
+            ]
+        ],
+        "scope-min-length": [
+            2,
+            "always",
+            3
+        ],
+        "scope-max-length": [
+            2,
+            "always",
+            20
+        ],
+        "subject-empty": [
             0,
-            "never"
+            "always",
+            [
+                "lowerCase"
+            ]
+        ],
+        "subject-case": [
+            2,
+            "always",
+            [
+                "sentence-case",
+                "start-case",
+                "pascal-case",
+                "upper-case"
+            ]
+        ],
+        "header-max-length": [
+            0,
+            "always",
+            120
+        ],
+        "footer-max-line-length": [
+            2,
+            "always",
+            100
         ]
     }
 }
