@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.0.1](https://github.com/jonathansantana19/commit-semmantic/compare/v9.0.0...v9.0.1) (2021-05-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **teste:** teste tete
+
+Related to BS-12
+* **teste:** bla bla bla breaking
+
+### Features
+
+* **teste:** hello world ([0fd8a75](https://github.com/jonathansantana19/commit-semmantic/commits/0fd8a753cce88908a4ad2d45fd51826134cd0aeb))
+* **teste:** teste ([9957e84](https://github.com/jonathansantana19/commit-semmantic/commits/9957e84791622fd452957874fb039df6be2280c1)), closes [#BS-123](https://github.com/jonathansantana19/commit-semmantic/issues/BS-123)
+
 ## [9.0.0](https://github.com/jonathansantana19/commit-semmantic/compare/v8.0.0...v9.0.0) (2021-04-17)
 
 
