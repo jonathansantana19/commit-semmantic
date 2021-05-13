@@ -3,11 +3,6 @@
         "@commitlint/config-conventional"
     ],
     "rules": {
-        "subject-empty": [
-            2,
-            "never",
-            "error"
-        ],
         "type-empty": [
             2,
             "never",
@@ -59,10 +54,20 @@
             "always",
             120
         ],
+        "subject-empty": [
+            2,
+            "never",
+            "error"
+        ],
         "body-leading-blank": [
             0,
             "always",
             "warning"
+        ],
+        "body-min-length": [
+            1,
+            "always",
+            20
         ],
         "footer-empty": [
             2,
